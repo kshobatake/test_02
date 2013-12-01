@@ -1,0 +1,14 @@
+wget http://cr.yp.to/software/ezmlm-0.53.tar.gz
+
+
+cd ezmlm-0.53-idx-0.41
+make
+make setup
+
+wget http://sourceforge.net/projects/qmailadmin/files/latest/download?source=files
+tar zxvf ../download/mail/qmailadmin-1.2.16.tar.gz
+cd qmailadmin-1.2.16
+./configure --enable-autoresponder-path=n --enable-htmldir=/usr/apache/htdocs --enable-cgibindir=/usr/apache/cgi-bin
+make
+make install-strip
+
