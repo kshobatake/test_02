@@ -1,1 +1,4 @@
 find . -type f -user tomcat -mtime -50 -mmin +100 | grep -v webapps
+
+find . -type f -user tomcat -mtime -30 -mmin +100 | grep -v webapps
+
